@@ -1,0 +1,73 @@
+<!-- Navigation -->
+
+<nav class="navbar navbar-expand-lg navbar-background navbar-dark p-3">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/dashboard"><img
+        src="/img/logo/logo.png"
+      /></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item me-2">
+          <button class="btn-nav-diamonds"><img
+              src="/img/icons/diamond.png"
+              width="24px"
+              class="me-2"
+            /><span id="number-diamonds">{{#each user}}{{toFixed
+                  numberDiamonds
+                }}{{/each}}</span></button>
+        </li>
+        <li class="nav-item me-2 mt-sm-1 mt-md-1 mt-lg-0">
+          <a href="/dashboard/diamonds">
+            <button class="btn-nav-yellow">Buy diamonds</button>
+          </a>
+        </li>
+        <li class="nav-item me-2 mt-sm-1 mt-md-1 mt-lg-0">
+          
+            <button class="btn-nav-white">Support</button>
+
+        </li>
+        <li class="nav-item me-2 mt-sm-1 mt-md-1 mt-lg-0">
+          <a href="/dashboard/history">
+            <button class="btn-nav-white">History</button>
+          </a>
+        </li>
+        <li class="nav-item mt-sm-1 mt-md-1 mt-lg-0">
+          <div class="dropdown">
+            <a
+              class="btn btn-secondary btn-nav-white dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              {{#each user}}{{user}}{{/each}}
+            </a>
+            <ul
+              class="dropdown-menu mt-sm-1 mt-md-1 mt-lg-1"
+              style="margin-left:-60px; z-index:100"
+            >
+              <li><a class="dropdown-item" href="/dashboard/account">My account</a></li>
+              <li><a
+                  class="dropdown-item"
+                  href="/dashboard/logout"
+                >Exit</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Navigation - End -->

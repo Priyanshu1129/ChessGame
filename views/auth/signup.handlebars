@@ -1,0 +1,77 @@
+{{>_navbar}}
+
+<!-- Account Box Create Account -->
+
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-lg-4 col-md-3"></div>
+    <div class="col-lg-4 col-md-6 col-sm-8 account-box-create-account">
+      {{#each erros}}
+      <div class="alert alert-danger">{{text}}</div>
+      {{else}}
+      {{/each}}
+      {{>_msg}}
+      <h4 class="mb-4">Create an account</h4>
+      <form action="/auth/signup" method="post" enctype="multipart/form-data">
+        <input class="input-class mb-3" type="text" name="user" placeholder="User" required>
+        <input class="input-class mb-3" type="email" name="email" placeholder="Email" required>
+        <input class="input-class mb-3" type="password" name="password" placeholder="Password" required>
+        <input class="input-class mb-3" type="password" name="password2" placeholder="Repeat your password" required>
+        <!-- Add a hidden file input field for profile image upload -->
+        <input id="hiddenFileInput" class="input-class mb-3" type="file" name="profileImage" accept="image/*"
+          style="display: none;">
+        <!-- Add a button to trigger the file input field -->
+        <button type="button" id="uploadProfileImageButton" class="btn btn-primary mb-5">Upload Profile Image</button>
+        <br>
+        <button type="submit">Create account</button><br>
+      </form>
+
+      <a href="/" id="customBtn" class="google btn-social-media mt-4">
+        <span class="social-media-icon"><i class="fa fa-google fa-fw"></i></span> <span class="social-media-text">Sign
+          up with Google</span>
+      </a>
+
+
+      <a href="/" class="fb btn-social-media mt-2 mb-3">
+        <span class="social-media-icon"><i class="fa fa-facebook fa-fw"></i></span> <span class="social-media-text">Sign
+          up with Facebook</span>
+      </a>
+      <br>
+
+      <a href="/auth/login">Already have an account?</a><br><br>
+
+    </div>
+    <div class="col-lg-4 col-md-3"></div>
+  </div>
+</div>
+
+<script>
+  // Get elements by their IDs
+  const hiddenFileInput = document.getElementById('hiddenFileInput');
+  const uploadProfileImageButton = document.getElementById('uploadProfileImageButton');
+
+  // Add a click event listener to the upload button
+  uploadProfileImageButton.addEventListener('click', () => {
+    // Trigger the hidden file input field
+    hiddenFileInput.click();
+  });
+
+
+  // Add a change event listener to the hidden file input field
+  hiddenFileInput.addEventListener('change', (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      // Update the button text with the file name
+      uploadProfileImageButton.textContent = `Selected: ${file.name}`;
+     
+    }
+  });
+</script>
+
+<!-- Account Box Create Account - End -->
+
+{{>_footer}}
+
+
+{{!--
+<script>startApp()</script> --}}

@@ -1,0 +1,54 @@
+    <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
+    
+    
+    {{>_navbar-dashboard}}
+    
+    
+  <table id="example" class="table table-striped" style="width:100%">
+        <thead>
+            <tr>
+              <th>Mode</th>
+                <th>Opponent</th>
+                <th>Status</th>
+                <th>Diamonds</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each historyGames}}
+            <tr>
+                <td>{{this.mode}}</td>
+                <td>{{this.opponent}}</td>
+                <td>{{this.status}}</td>
+                <td>{{this.diamonds}}</td>
+                <td>{{this.date}}</td>
+            </tr>
+                {{/each}}
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Mode</th>
+                <th>Opponent</th>
+                <th>Status</th>
+                <th>Diamonds</th>
+                <th>Date</th>
+            </tr>
+        </tfoot>
+    </table>
+    
+
+    {{>_footer-dashboard}}
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+    <script>
+        $(document).ready(function () {
+    $('#example').DataTable();
+});
+    </script>

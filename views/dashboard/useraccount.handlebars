@@ -1,0 +1,149 @@
+{{>_navbar-dashboard}}
+
+<!-- Play Area -->
+
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-lg-6 col-sm-12 col-md-12 play-area-cover">
+      <div class="play-area-img">
+        <center><img src="/img/images/checkers-board.png"></center>
+      </div>
+
+    </div>
+    <div class="col-lg-6 col-sm-12 col-md-12 play-area-buttons">
+      <div class="play-area">
+        <div class="play-area-body">
+          <h2>Play Checkers Online</h2><br>
+        </div>
+        <button class="play-button play-button-1" data-bs-toggle="modal" data-bs-target="#play-online-chess"><img
+            src="img/images/play-online.png" width="60px"><span class="text-btn-1">Play online</span></button>
+        <button class="play-button-competitive play-button-2 mt-3" data-bs-toggle="modal"
+          data-bs-target="#competitive-chess"><img src="img/images/competitive-game.png" width="55px"><span
+            class="text-btn-2">Competitive online game</span></button>
+        <button class="play-button play-button-3 mt-3"><img src="img/images/play-computer.png" width="65px"><span
+            class="text-btn-3"><a style="text-decoration: none; color:black" href="/dashboard/single-player">Play
+              Computer </a> <small style="font-size: 14px">(Coming soon)</small></span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Play Area - End -->
+
+<!-- Modals -->
+
+<div class="modal fade" id="play-online-chess" tabindex="-1" aria-labelledby="Chess-Label" aria-hidden="true">
+  <div class="modal-dialog mt-lg-5">
+    <div class="modal-content">
+      <div class="modal-header">
+        <center><img src="/img/modal-icons/checkers.png"></center>
+        <center>
+          <h5>Checkers</h5>
+        </center>
+      </div>
+      <div class="modal-body">
+        <p>Checkers is a game played on a board checkered with squares of two colors. Two players compete in checkers to
+          have the last piece on the board. <br><br><span class="span-alert">The player who is inactive for more than 5
+            minutes will automatically lose the game.</span><br><span class="span-alert">If within 20 minutes no player
+            wins, it will be considered a technical tie.</span></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-modal-close" data-bs-dismiss="modal" aria-label="Close">Close</button>
+        <a href="/dashboard/multi-player"><button type="button" class="btn-modal"><i
+              class="fa-solid fa-angles-right"></i> Play Online Now</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="competitive-chess" tabindex="-1" aria-labelledby="Competitive-Chess-Label"
+  aria-hidden="true">
+  <div class="modal-dialog mt-lg-5">
+    <div class="modal-content">
+      <div class="modal-header">
+        <center><img src="/img/modal-icons/checkers.png"></center>
+        <center>
+          <h5>Checkers</h5>
+        </center>
+      </div>
+      <div class="modal-body">
+        <p>Checkers is a game played on a board checkered with squares of two colors. Two players compete in checkers to
+          have the last piece on the board. <br><br><span class="span-alert">The player who is inactive for more than 5
+            minutes will automatically lose the game.</span><br><span class="span-alert">If within 20 minutes no player
+            wins, it will be considered a technical tie.</span></p>
+        <hr>
+        <h5 class="mt-3">Choose a value to continue</h5>
+        <span class="span-balance">You have <img src="/img/icons/diamond.png" width="20px"> <span
+            class="number-diamonds">{{#each user}}<h2 id="account_balance">{{numberDiamonds}}</h2>{{/each}}</span>
+        </span>
+        <div class="row mt-3">
+          <div class="col"><button onclick="diamond(1)" class="btn-diamond class1"><img src="/img/icons/diamond.png"
+                width="20px"> 1</button></div>
+          <div class="col"><button onclick="diamond(2)" class="btn-diamond class2"><img src="/img/icons/diamond.png"
+                width="20px"> 2</button></div>
+          <div class="col"><button onclick="diamond(5)" class="btn-diamond class5"><img src="/img/icons/diamond.png"
+                width="20px"> 5</button></div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col"><button onclick="diamond(10)" class="btn-diamond class10"><img src="/img/icons/diamond.png"
+                width="20px"> 10</button></div>
+          <div class="col"><button onclick="diamond(20)" class="btn-diamond class20"><img src="/img/icons/diamond.png"
+                width="20px"> 20</button></div>
+          <div class="col"><button onclick="diamond(50)" class="btn-diamond class50"><img src="/img/icons/diamond.png"
+                width="20px"> 50</button></div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col"><button onclick="diamond(100)" class="btn-diamond class100"><img src="/img/icons/diamond.png"
+                width="20px"> 100</button></div>
+          <div class="col"><button onclick="diamond(200)" class="btn-diamond class200"><img src="/img/icons/diamond.png"
+                width="20px"> 200</button></div>
+          <div class="col"><button onclick="diamond(500)" class="btn-diamond class500"><img src="/img/icons/diamond.png"
+                width="20px"> 500</button></div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col"><button onclick="diamond(1000)" class="btn-diamond class1000"><img
+                src="/img/icons/diamond.png" width="20px"> 1000</button></div>
+          <div class="col"><button onclick="diamond(1500)" class="btn-diamond class1500"><img
+                src="/img/icons/diamond.png" width="20px"> 1500</button></div>
+          <div class="col"><button onclick="diamond(2000)" class="btn-diamond class2000"><img
+                src="/img/icons/diamond.png" width="20px"> 2000</button></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-modal-close" data-bs-dismiss="modal" aria-label="Close">Close</button>
+        <button type="button" id="start_competiton" class="btn-modal"><i class="fa-solid fa-angles-right"></i> Start
+          competition</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modals - End -->
+
+{{>_footer-dashboard}}
+
+
+<script type="text/javascript">
+  const start_competiton = document.getElementById("start_competiton")
+
+  const user_diamonds = {{ diamond }}
+  let userMarkDiamon = 0
+  function diamond(selectDiamond) {
+    if (user_diamonds < selectDiamond) {
+      return alert("You don't have enogh diamond to start this competiton")
+    }
+    return userMarkDiamon = selectDiamond
+  }
+
+  start_competiton.addEventListener("click", (e) => {
+    if (userMarkDiamon > 0) {
+      return window.location.href = `/dashboard/cut-diamond?diamond=${userMarkDiamon}`
+    }
+    alert("Please select your competiton diamond")
+  })
+
+</script>

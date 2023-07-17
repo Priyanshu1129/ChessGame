@@ -1,0 +1,36 @@
+   {{>_navbar-dashboard}}
+    
+    <!-- Account Box Changes -->
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-4 col-md-3"></div>
+            <div class="col-lg-4 col-md-6 col-sm-8 account-box-changes">
+              {{#each erros}}
+                  <div class="alert alert-danger">{{text}}</div>
+              {{else}}
+              {{/each}}
+              {{>_msg}}
+              <h1 class="display-6">My account</h1>
+                <hr>
+                <h4 class="mb-4">User and Email</h4>
+                <form action="/dashboard/account" method="post">
+                <input class="input-class-changes mb-3" type="text" name="user" placeholder="{{#each user}}{{user}}{{/each}}" >
+                <input class="input-class-changes mb-3" type="email" name="email" placeholder="{{#each user}}{{email}}{{/each}}">
+                <hr>
+                <h4 class="mb-4">Password</h4>
+                <input class="input-class-changes mb-3" type="password" name="oldPassword" placeholder="Current password">
+                <input class="input-class-changes mb-3" type="password" name="newPassword" placeholder="New password">
+                <input class="input-class-changes mb-3" type="password" name="repeatPassword" placeholder="Repeat New Password">
+                <hr>
+                <button>Apply changes</button>
+              </form>
+            </div>
+            <div class="col-lg-4 col-md-3"></div>
+        </div>
+    </div>
+
+    <!-- Account Box Changes - End -->
+
+    {{>_footer-dashboard}}
+   

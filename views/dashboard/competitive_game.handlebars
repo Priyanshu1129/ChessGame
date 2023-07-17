@@ -1,0 +1,299 @@
+<link rel="icon" href="./img/icon.jpg" />
+<link rel="stylesheet" type="text/css" href="/css/semantic.min.css" />
+<link rel="stylesheet" href="/css/chessboard-1.0.0.min.css" />
+<link rel="stylesheet" href="/css/styles.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/56ede590f2.js" crossorigin="anonymous"></script>
+
+<style type="text/css">
+  body {
+    background-size: 950px;
+    font-family: 'Rubik';
+  }
+
+  ::selection {
+    background: #FA6E00;
+    color: white;
+  }
+
+  .modal {
+    --bs-modal-width:
+      50%;
+    --bs-modal-bg: transparent;
+    background-color: rgba(5, 5, 4, 0.85);
+    font-family: 'Rubik';
+  }
+
+  .modal-header,
+  .modal-body {
+    border-bottom: 3px solid rgba(255, 222, 255, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .modal-header img {
+    width:
+      70px;
+  }
+
+  .modal-body {
+    text-align: center;
+    padding-top: 43px;
+    padding-bottom:
+      43px;
+  }
+
+  .modal-body h1 {
+    color: #ffde00;
+    font-size: 30px;
+  }
+
+  .modal-body h4 {
+    color: white;
+    font-size: 18px;
+  }
+
+  .modal-header,
+  .modal-body,
+  .modal-footer {
+    background-color: #262421;
+    color: white;
+  }
+
+  .modal-footer {
+    border-top: none;
+  }
+
+  .btn-nav-btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 3px solid #FA6E00;
+    color: #DFE0DF;
+    font-weight:
+      600;
+    background: transparent;
+    border-radius: 3px;
+  }
+
+  .btn-nav-btn:hover {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right:
+      20px;
+    border: 3px solid #FA6E00;
+    color: #DFE0DF;
+    font-weight: 600;
+    background:
+      #FA6E00;
+    border-radius: 3px;
+    transition: border 0.5s, background 0.5s, color 0.5s;
+  }
+
+  .profile-name{
+    width: 590px;
+    margin: auto;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding-left: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .footer{
+    margin-top: 16rem  !important;
+  }
+</style>
+<audio id="myAudio">
+  <source src="/mp3/soundMove.mp3" type="audio/mpeg" />
+  Your browser does not support the audio element.
+</audio>
+<audio id="messageTone">
+  <source src="/mp3/insight.mp3" type="audio/mpeg" />
+  Your browser does not support the audio element.
+</audio>
+
+<!-- Navbar -->
+{{>_navbar-dashboard}}
+
+<div style="min-height: calc(100vh - 1rem);">
+
+
+  <!-- opponent left you won model  -->
+  <div class="modal fade" id="opponentLeftWinnerModal" tabindex="-1" aria-labelledby="opponentLeftWinnerModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="/img/modal-icons/win.png" />
+        </div>
+        <div class="modal-body">
+          <h1>Congratulations! You won!</h1>
+          <h4>Opponent left the game</h4>
+        </div>
+        <div class="modal-footer">
+          <a href="/dashboard" target="_self"><button type="button" class="btn-nav-btn">Ok</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- game draw Modal  -->
+  {{> _game-draw-model}}
+
+  <!-- game loss model  -->
+  {{> _game-loss-model}}
+
+  <!-- game won model  -->
+  {{> _game-win-model}}
+  <div>
+
+    <div id="joinFormDiv" style="displayne">
+      <form id="joinForm">
+        <h1 style="text-align: center; margin: 10px; font-size: 35px">
+          START GAME
+        </h1>
+        <div style="text-align: center">
+          <input readonly value="{{#each user}}{{user}}{{/each}}" class="formInput" type="text" placeholder="Name"
+            style="padding: 10px" />
+          <p hidden id="userId">{{userId}}</p>
+        </div>
+        <div style="text-align: center">
+          <input hidden readonly value="{{diamond}}" class="formInput" id="roomId" type="text" placeholder="Room"
+            style="padding: 10px" />
+        </div>
+        {{!-- <div id="roomDropdownP" style="
+              text-align: center;
+              height: 50px;
+              margin: 10px;
+              padding: 0 4px;
+            ">
+          <div id="roomDropdown" class="ui fluid search selection dropdown"
+            style="border: 1px solid gray; width: 300px; margin: auto">
+            <input type="hidden" name="country" />
+            <i class="dropdown icon"></i>
+            <div class="default text">SELECT ROOM</div>
+            <div class="menu" id="dropRooms">
+            </div>
+          </div>
+        </div> --}}
+        <div style="text-align: center">
+          <button class="game ui black button" id="joinButton">JOIN</button>
+        </div>
+        <div style="text-align: center">
+          <p id="message"></p>
+          {{!-- <div>Registration closes in <span id="time"></span> minutes!</div> --}}
+        </div>
+      </form>
+    </div>
+
+    <!-- /Input Form -->
+    <div>
+      <!-- Chess Board -->
+      <div id="chessGame" style="display: none">
+        <!-- Color Schemes -->
+        <div style="text-align: center; margin: 10px">
+          <button id="grey_board" class="ui button black color_b">
+            GREY
+          </button>
+          <button id="orange_board" class="ui button grey color_b">
+            ORANGE
+          </button>
+          <button id="green_board" class="ui button grey color_b">
+            GREEN
+          </button>
+          <button id="blue_board" class="ui button grey color_b">BLUE</button>
+        </div>
+        <!-- Status and PGN -->
+        <div id="statusPGN" style="text-align: center; display: none">
+          <div>
+            <label>
+              <h3><strong>STATUS</strong></h3>
+            </label>
+            <div id="status">YOUR TURN</div>
+          </div>
+          <div>
+            <label>
+              <h3><strong>HISTORY</strong></h3>
+            </label>
+            <div id="pgn" style="
+                  overflow: auto;
+                  white-space: nowrap;
+                  width: 500px;
+                  margin: auto;
+                "></div>
+          </div>
+        </div>
+        <div class="profile-name">
+          <img id="opponent-image" src="/img/images/black-user.png">
+          <h2 id="opponent-name">Opponent Name</h2>
+        </div>
+        <div id="myBoard" style="
+              width: 569px;
+              margin: auto;
+              margin-top: 10px;
+              margin-bottom: 10px;
+            "></div>
+
+        <div class="profile-name">
+          <img id="user-image" src="/img/images/gray-user.png">
+          <h2 id="user-name">{{#each user}}{{user}}{{/each}}</h2>
+        </div>
+        <div style="text-align: center; margin-bottom: 20px">
+          <a href="/dashboard" class="ui button black" style="width: 569px">LEAVE GAME</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Chatting window -->
+  <div id="chat" style="
+        background-color: white;
+        z-index:32;
+        display: none;
+        text-align: right;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 400px;
+        margin-right: 10px;
+        border: 2px solid black;
+      ">
+    <div class="ui button grey" style="border-radius: 0; width: 100%; padding: 15px; font-size: 16px" id="messageBox">
+      MESSAGES
+    </div>
+    <div id="chatBox" style="display: none; padding: 12px">
+      <div id="chatContent" style="height: 240px; overflow-y: auto; word-break: break-all">
+      </div>
+      <form style="margin-bottom: 0" class="ui form">
+        <div style="display: flex; justify-content: space-around">
+          <input class="form-control" id="inputMessage" type="text" placeholder="Enter a Message"
+            style="margin-right: 10px" />
+          <button class="ui black button" id="send">SEND</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</div>
+
+<!-- Footer -->
+
+{{>_footer-dashboard}}
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="/js/semantic.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/chessboard-1.0.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.2/chess.js"
+  integrity="sha384-s3XgLpvmHyscVpijnseAmye819Ee3yaGa8NxstkJVyA6nuDFjt59u1QvuEl/mecz" crossorigin="anonymous"></script>
+<script src="/js/competitive_game.js"></script>

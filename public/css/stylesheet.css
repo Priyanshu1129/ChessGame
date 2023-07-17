@@ -1,0 +1,1343 @@
+/****** Media Queries ******/
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+	.play-area img.cover-image {
+      display: none;
+	}
+
+  .play-area-buttons {
+    margin-left: 0;
+  }
+
+  .play-area-img img {
+    display: none;
+  }
+
+  .play-area-img {
+    display: none;
+  }
+
+  .legal-box {
+    background: #262421;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 35px;
+    padding-right: 35px;
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+  .legal-box h1 {
+    text-align: center;
+  }
+
+  .legal-box p {
+    text-align: left;
+  }
+
+
+  footer {
+    width: 100%;
+    background: #291301;
+    color: #620000;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 5px solid #1D0D01;
+    font-family: 'Rubik';
+    margin-top: 70px !important;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+
+  .input-group-text {
+    display: none;
+  }
+
+  .input-group input {
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+  }
+
+  .modal {
+    --bs-modal-width: 100% !important;
+    --bs-modal-bg: transparent;
+    background-color: transparent;
+  }
+
+  li.nav-item {
+    margin-top: 8px;
+  }
+
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+	.play-area img.cover-image {
+    display:  none;
+	}
+
+  .play-area-img {
+    display: none;
+  }
+
+  .play-area-img img {
+    display: none;
+  }
+
+  .legal-box {
+    background: #262421;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+  .legal-box h1 {
+    text-align: center;
+  }
+
+  .legal-box p {
+    text-align: left;
+  }
+
+  footer {
+    width: 100%;
+    background: #291301;
+    color: #620000;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 5px solid #1D0D01;
+    font-family: 'Rubik';
+    margin-top: 70px !important;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+
+  .input-group-text {
+    display: none;
+  }
+
+  .input-group input {
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+  }
+
+  .modal {
+    --bs-modal-width: 100% !important;
+    --bs-modal-bg: transparent;
+    background-color: transparent;
+  }
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+	.play-area img.cover-image {
+      display: block;
+	}
+
+  .play-area-img {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: transparent;
+  }
+
+  .play-area-img img {
+    display: block;
+  }
+
+  .input-group-text {
+    display: none;
+  }
+
+  .input-group input {
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+  }
+
+  .modal {
+    --bs-modal-width: 85% !important;
+    --bs-modal-bg: transparent;
+    background-color: transparent;
+  }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+	.play-area img.cover-image {
+    display: block;
+  	width: 100%;
+  	height: 240px;
+	}
+
+  .play-area-buttons {
+    margin-left: -25px;
+  }
+
+  .play-area-img img {
+    display: block;
+    width: 85.2%;
+  }
+
+  .play-area-img {
+    display: block;
+    padding-top: 30px;
+    height: 480px;
+    background: transparent;
+  }
+
+  .legal-box {
+    background: #262421;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+  .legal-box h1 {
+    text-align: center;
+  }
+
+  .legal-box p {
+    text-align: left;
+  }
+
+  .modal {
+    --bs-modal-width: 50% !important;
+    --bs-modal-bg: transparent;
+    background-color: transparent;
+  }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+	.play-area img.cover-image {
+      width: 100%;
+      height: 290px;
+	}
+
+  .modal {
+    --bs-modal-width: 50% !important;
+    --bs-modal-bg: transparent;
+    background-color: transparent;
+  }
+
+}
+
+
+
+/****** Basic ******/
+
+body {
+  background: #050504;
+  background-size: 950px;
+  font-family: 'Rubik';
+}
+
+::selection {
+  background: #FA6E00;
+  color: white;
+}
+
+
+/****** Basic - End ******/
+
+/****** Social Media Login ******/
+
+
+.account-box-user-account a.btn-social-media, .account-box-create-account a.btn-social-media  {
+  width: 85%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.9;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+  position: relative;
+  text-align: left;
+}
+
+.account-box-user-account a.btn-social-media:hover, .account-box-create-account a.btn-social-media:hover  {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb and google buttons */
+.account-box-user-account a.fb, .account-box-create-account a.fb {
+  background-color: #1877f2;
+  color: white;
+}
+
+.account-box-user-account a.google, .account-box-create-account a.google  {
+  background-color: #dd4b39;
+  color: white;
+}
+
+span.social-media-icon {
+  margin-left: 30px;
+}
+
+span.social-media-text {
+  margin-left: 15px;
+}
+
+/****** Social Media Login - End ******/
+
+
+
+/****** Navigation ******/
+
+.navbar-background {
+  background: #FA6E00;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.navbar-brand img {
+  width: 280px;
+}
+
+.btn-nav-white {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 3px solid #620000;
+  color: white;
+  font-weight: 600;
+  background: transparent;
+  border-radius: 3px;
+  font-size: 13.5px;
+}
+
+.btn-nav-white:hover {
+  color: white;
+  background: #620000;
+  border: 3px solid #620000;
+  transition: border 0.5s, background 0.5s, color 0.5s;
+}
+
+a.btn-nav-white {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 3px solid #620000;
+  color: white;
+  font-weight: 600;
+  background: transparent;
+  border-radius: 3px;
+}
+
+a.btn-nav-white:hover {
+  color: white;
+  background: #620000;
+  border: 3px solid #620000;
+  transition: border 0.5s, background 0.5s, color 0.5s;
+}
+
+ .btn-nav-yellow {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 3px solid #620000;
+  color: white;
+  font-weight: 600;
+  background: #620000;
+  border-radius: 3px;
+  font-size: 13.5px;
+}
+
+
+.btn-nav-yellow:hover {
+  color: white;
+  background: #620017;
+  border: 3px solid #620017;
+  transition: border 0.5s, background 0.5s, color 0.5s;
+}
+
+.btn-nav-diamonds {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 3px solid transparent;
+  color: #FA6E00;
+  font-weight: 600;
+  background: #620000;
+  border-radius: 3px;
+  font-size: 13.5px;
+}
+
+.dropdown-menu {
+  --bs-dropdown-link-active-bg: #FA6E00 !important;
+  --bs-dropdown-link-color: #620000 !important; 
+  --bs-dropdown-link-hover-bg: #FDF0E6 !important;
+  --bs-dropdown-link-hover-color: #620017 !important;
+  
+}
+
+.btn-secondary {
+  --bs-btn-active-bg: #620000 !important;
+  --bs-btn-active-border-color: #620000 !important;
+}
+
+
+
+/****** Navigation - End ******/
+
+
+
+/****** Play Area ******/
+
+.play-area {
+  background: transparent;
+  padding-bottom: 20px;
+  width: 100%;
+  height: 480px;
+  color: white;
+  text-align: center;
+}
+
+.play-area-body {
+  padding-top: 16px;
+}
+
+.play-area-body h2 {
+  font-size: 45px;
+  padding-top: 10px;
+  font-weight: 600;
+}
+
+.play-button {
+  width: 100%;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 1px rgba(255, 255, 255, 0.15), 0 7px 0 #bbb, 0 8px 3px rgba(0, 0, 0, 0.2);
+  border: none;
+  background: #dfe0df;
+  font-size: 22px;
+  border-radius: 9px;
+  font-weight: bolder;
+  color: #402e32;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  position: relative;
+  text-shadow: 2px 4px 3px #bbb;
+  text-align: left;
+}
+
+.play-button:hover {
+  width: 100%;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 1px rgba(255, 255, 255, 0.15), 0 7px 0 #a3a3a3, 0 8px 3px rgba(0, 0, 0, 0.2), 0 0 5px #f7f7f7,  0 0 8px #f7f7f7;
+  border: none;
+  background: #d8d8d8;
+  font-size: 22px;
+  border-radius: 9px;
+  font-weight: bolder;
+  color: #402e32;
+  text-shadow: 2px 4px 3px #a3a3a3;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.3s linear;
+  text-align: left;
+
+}
+
+.play-button-competitive {
+  width: 100%;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 1px rgba(255, 255, 255, 0.15), 0 7px 0 #FA6E00, 0 8px 3px rgba(0, 0, 0, 0.2);
+  border: none;
+  background: #fc892b;
+  font-size: 22px;
+  border-radius: 9px;
+  font-weight: bolder;
+  color: #620000;
+  cursor: pointer;
+  text-shadow: 2px 4px 3px #FA6E00;
+  transition: all 0.5s ease;
+  position: relative;
+  text-align: left;
+  
+}
+
+.play-button-competitive:hover {
+  width: 100%;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 1px rgba(255, 255, 255, 0.15), 0 7px 0 #e06200, 0 8px 3px rgba(0, 0, 0, 0.2), 0 0 5px #FA6E00,  0 0 8px #FA6E00;
+  border: none;
+  background: #fa8220;
+  font-size: 22px;
+  border-radius: 9px;
+  font-weight: bolder;
+  color: #620000;
+  cursor: pointer;
+  text-shadow: 2px 4px 3px #e06200;
+  transition: all 0.5s ease;
+  position: relative;
+  text-align: left;
+  
+}
+
+.play-button img {
+  margin-left: 22px;
+}
+
+.play-button-competitive img {
+  margin-left: 22px;
+}
+
+.play-button-1 {
+  padding-top:  27.5px;
+  padding-bottom: 27.5px;
+}
+
+.play-button-2 {
+  padding-top:  20px;
+  padding-bottom: 20px;
+}
+
+.play-button-3 {
+  padding-top:  34.5px;
+  padding-bottom: 34.5px;
+}
+
+span.text-btn-1 {
+  margin-left: 37px;
+}
+
+span.text-btn-2{
+  margin-left: 40px;
+}
+
+span.text-btn-3 {
+  margin-left: 30px;
+}
+
+/****** Play Area - End ******/
+
+
+
+/****** General Forms Style ******/
+
+.input-class {
+  width: 85%;
+  border: none;
+  background: #3C3A38;
+  border-radius: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+.input-class:focus {
+  outline: none;
+}
+
+.input-class::placeholder {
+  color: #DFE0DF;
+  font-size: 16px;
+  opacity: 100%;
+}
+
+.input-class-changes {
+  width: 85%;
+  border: none;
+  background: #3C3A38;
+  border-radius: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+.input-class-changes:focus {
+  outline: none;
+}
+
+.input-class-changes::placeholder {
+  color: #DFE0DF;
+  font-size: 16px;
+  opacity: 100%;
+}
+
+input.input-value {
+  font-size:  18px;
+  font-weight: 600;
+}
+
+/****** General Forms Style - End ******/
+
+
+
+/****** Account Box Create Account ******/
+
+.account-box-create-account {
+  background: #262421;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  border-radius: 5px;
+  color: #DFE0DF;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.account-box-create-account button {
+  width: 85%;
+  padding-top:  10px;
+  padding-bottom: 10px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 1px rgba(255, 255, 255, 0.15), 0 5px 0 #FA6E00, 0 8px 3px rgba(0, 0, 0, 0.2);
+  border: none;
+  background: #fc892b;
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: bolder;
+  color: #DFE0DF;
+  cursor: pointer;
+  text-shadow: 2px 4px 3px #FA6E00;
+  transition: all 0.5s ease;
+  position: relative;
+  
+}
+
+.account-box-create-account button:hover {
+  width: 85%;
+  padding-top:  10px;
+  padding-bottom: 10px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 1px rgba(255, 255, 255, 0.15), 0 5px 0 #e06200, 0 8px 3px rgba(0, 0, 0, 0.2), 0 0 5px #FA6E00,  0 0 8px #FA6E00;
+  border: none;
+  background: #fa8220;
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: bolder;
+  color: #DFE0DF;
+  cursor: pointer;
+  text-shadow: 2px 4px 3px #e06200;
+  transition: all 0.5s ease;
+  position: relative;
+  
+}
+
+.account-box-create-account a {
+  color: #DFE0DF;
+}
+
+/****** Account Box Create Account - End ******/
+
+
+
+/****** Account Box User Account ******/
+
+.account-box-user-account {
+  background: #262421;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  border-radius: 5px;
+  color: #DFE0DF;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.account-box-user-account button {
+  width: 85%;
+  padding-top:  10px;
+  padding-bottom: 10px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 1px rgba(255, 255, 255, 0.15), 0 5px 0 #FA6E00, 0 8px 3px rgba(0, 0, 0, 0.2);
+  border: none;
+  background: #fc892b;
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: bolder;
+  color: #DFE0DF;
+  cursor: pointer;
+  text-shadow: 2px 4px 3px #FA6E00;
+  transition: all 0.5s ease;
+  position: relative;
+  
+}
+
+.account-box-user-account button:hover {
+  width: 85%;
+  padding-top:  10px;
+  padding-bottom: 10px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 1px rgba(255, 255, 255, 0.15), 0 5px 0 #e06200, 0 8px 3px rgba(0, 0, 0, 0.2), 0 0 5px #FA6E00,  0 0 8px #FA6E00;
+  border: none;
+  background: #fa8220;
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: bolder;
+  color: #DFE0DF;
+  cursor: pointer;
+  text-shadow: 2px 4px 3px #e06200;
+  transition: all 0.5s ease;
+  position: relative;
+  
+}
+
+.account-box-user-account a {
+  color: #DFE0DF;
+}
+
+/****** Account Box User Account - End ******/
+
+
+
+/****** Account Box Recover Password ******/
+
+.account-box-recover-password {
+  background: #262421;
+  padding-top: 50px;
+  padding-bottom: 120px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.account-box-recover-password button {
+  width: 85%;
+  padding-top:  10px;
+  padding-bottom: 10px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 1px rgba(255, 255, 255, 0.15), 0 5px 0 #FA6E00, 0 8px 3px rgba(0, 0, 0, 0.2);
+  border: none;
+  background: #fc892b;
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: bolder;
+  color: #DFE0DF;
+  cursor: pointer;
+  text-shadow: 2px 4px 3px #FA6E00;
+  transition: all 0.5s ease;
+  position: relative;
+  
+}
+
+.account-box-recover-password button:hover {
+  width: 85%;
+  padding-top:  10px;
+  padding-bottom: 10px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 1px rgba(255, 255, 255, 0.15), 0 5px 0 #e06200, 0 8px 3px rgba(0, 0, 0, 0.2), 0 0 5px #FA6E00,  0 0 8px #FA6E00;
+  border: none;
+  background: #fa8220;
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: bolder;
+  color: #DFE0DF;
+  cursor: pointer;
+  text-shadow: 2px 4px 3px #e06200;
+  transition: all 0.5s ease;
+  position: relative;
+  
+}
+
+.account-box-recover-password a {
+  color: #DFE0DF;
+}
+
+/****** Account Box Recover Password - End ******/
+
+
+
+
+
+/****** Account Box Alert ******/
+
+.alert-danger {
+  background-color: #FF801E;
+  border-color: #FF801E;
+  width: 85%;
+  margin-left: 26px;
+  color: #DFE0DF;
+}
+
+/****** Account Box Alert ******/
+
+
+
+
+
+/****** Account Box Support ******/
+
+.account-box-support {
+  background: #262421;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.account-box-support a {
+  color: #DFE0DF;
+
+}
+
+.account-box-support p {
+  font-size: 16px;
+}
+
+.account-box-support-account button {
+  width: 85%;
+  padding-top:  10px;
+  padding-bottom: 10px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 1px rgba(255, 255, 255, 0.15), 0 5px 0 #FA6E00, 0 8px 3px rgba(0, 0, 0, 0.2);
+  border: none;
+  background: #fc892b;
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: bolder;
+  color: #DFE0DF;
+  cursor: pointer;
+  text-shadow: 2px 4px 3px #FA6E00;
+  transition: all 0.5s ease;
+  position: relative;
+  
+}
+
+.account-box-support-account button:hover {
+  width: 85%;
+  padding-top:  10px;
+  padding-bottom: 10px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 1px rgba(255, 255, 255, 0.15), 0 5px 0 #e06200, 0 8px 3px rgba(0, 0, 0, 0.2), 0 0 5px #FA6E00,  0 0 8px #FA6E00;
+  border: none;
+  background: #fa8220;
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: bolder;
+  color: #DFE0DF;
+  cursor: pointer;
+  text-shadow: 2px 4px 3px #e06200;
+  transition: all 0.5s ease;
+  position: relative;
+  
+}
+
+button.btn-email {
+  width: 85%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 3px solid #FA6E00;
+  color: #DFE0DF;
+  font-weight: 600;
+  background: transparent;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button.btn-email:hover {
+  color: #DFE0DF;
+  background: #FA6E00;
+  border: 3px solid #FA6E00;
+  transition: border 0.5s, background 0.5s, color 0.5s;
+}
+
+/****** Account Box Support - End ******/
+
+
+
+
+/****** Account Box Changes ******/
+
+.account-box-changes {
+  background: #262421;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.account-box-changes button {
+  width: 85%;
+  padding-top:  10px;
+  padding-bottom: 10px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 1px rgba(255, 255, 255, 0.15), 0 5px 0 #FA6E00, 0 8px 3px rgba(0, 0, 0, 0.2);
+  border: none;
+  background: #fc892b;
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: bolder;
+  color: #DFE0DF;
+  cursor: pointer;
+  text-shadow: 2px 4px 3px #FA6E00;
+  transition: all 0.5s ease;
+  position: relative;
+  
+}
+
+.account-box-changes button:hover {
+  width: 85%;
+  padding-top:  10px;
+  padding-bottom: 10px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 1px rgba(255, 255, 255, 0.15), 0 5px 0 #e06200, 0 8px 3px rgba(0, 0, 0, 0.2), 0 0 5px #FA6E00,  0 0 8px #FA6E00;
+  border: none;
+  background: #fa8220;
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: bolder;
+  color: #DFE0DF;
+  cursor: pointer;
+  text-shadow: 2px 4px 3px #e06200;
+  transition: all 0.5s ease;
+  position: relative;
+  
+}
+
+.account-box-changes a {
+  color: #DFE0DF;
+}
+
+.account-box-changes  hr {
+  border: 2px solid rgba(0, 0, 0, 0.7);
+}
+
+/****** Account Box Changes - End ******/
+
+
+
+/****** Account Box New Password ******/
+
+.account-box-new-password {
+  background: #262421;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.account-box-new-password button {
+  width: 85%;
+  padding-top:  10px;
+  padding-bottom: 10px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 1px rgba(255, 255, 255, 0.15), 0 5px 0 #FA6E00, 0 8px 3px rgba(0, 0, 0, 0.2);
+  border: none;
+  background: #fc892b;
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: bolder;
+  color: #DFE0DF;
+  cursor: pointer;
+  text-shadow: 2px 4px 3px #FA6E00;
+  transition: all 0.5s ease;
+  position: relative;
+  
+}
+
+.account-box-new-password button:hover {
+  width: 85%;
+  padding-top:  10px;
+  padding-bottom: 10px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 1px rgba(255, 255, 255, 0.15), 0 5px 0 #e06200, 0 8px 3px rgba(0, 0, 0, 0.2), 0 0 5px #FA6E00,  0 0 8px #FA6E00;
+  border: none;
+  background: #fa8220;
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: bolder;
+  color: #DFE0DF;
+  cursor: pointer;
+  text-shadow: 2px 4px 3px #e06200;
+  transition: all 0.5s ease;
+  position: relative;
+  
+}
+
+.account-box-new-password a {
+  color: #DFE0DF;
+}
+
+.account-box-new-password  hr {
+  border: 2px solid rgba(0, 0, 0, 0.7);
+}
+
+/****** Account Box New Password - End ******/
+
+
+
+/****** Legal Pages ******/
+
+
+
+/****** Legal Pages - End ******/
+
+
+
+/****** Balance ******/
+
+.balance-content {
+  background: #262421;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+  width: 100%;
+  border-radius: 5px;
+  color: white;
+  justify-content: left;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.balance-content h1 {
+  text-align: left;
+}
+
+
+.balance-content  hr {
+  border: 2px solid rgba(0,0,0,0.7);
+}
+
+.btn-balance {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 3px solid #FA6E00;
+  color: #DFE0DF;
+  font-weight: 600;
+  background: transparent;
+  border-radius: 3px;
+}
+
+.btn-balance:hover {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 3px solid #FA6E00;
+  color: #DFE0DF;
+  font-weight: 600;
+  background: #FA6E00;
+  border-radius: 3px;
+  transition: border 0.5s, background 0.5s, color 0.5s;
+}
+
+.balance-content .input-group-height {
+  height: 60.5px;
+}
+
+.balance-content .input-group-text {
+  background-color: #3C3A38;
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.balance-content .input-group-span {
+  font-size: 14px;
+}
+
+/****** Balance - End ******/
+
+
+/****** Game Base ******/
+
+
+
+/****** Game Base - End ******/
+
+
+
+/****** Modals ******/
+
+.modal-header, .modal-body {
+  border-bottom: 3px solid rgba(0,0,0,0.6);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.modal-header img {
+  width: 70px;
+}
+
+.modal-body {
+  text-align: center;
+  padding-top: 43px;
+  padding-bottom: 43px;
+}
+
+.modal-body h1 {
+  color: #ffde00;
+  font-size: 30px;
+}
+
+.modal-body h4 {
+  color: white;
+  font-size: 18px;
+}
+
+.modal-body p {
+  font-size: 15px;
+}
+
+span.span-alert {
+  font-weight: 700;
+  display: block;
+}
+
+.modal-header, .modal-body, .modal-footer {
+  background-color: #262421;
+  color: white;
+}
+
+.modal-header hr, .modal-body hr, .modal-footer hr {
+  border: 1px solid rgba(0,0,0,0.7);
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.btn-value {
+  width: 100%;
+  background: #3C3A38;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-value-large {
+  width: 100%;
+  background: #3C3A38;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-diamond {
+  width: 100%;
+  background: #3C3A38;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-diamond:hover {
+  background: rgb(240, 107, 2);
+  transition: 0.5s background;
+}
+
+.input-group-height {
+  height: 60.5px;
+}
+
+.input-group-text {
+  background-color: #3C3A38;
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+input.form-value {
+  background-color: #3C3A38;
+  color: white;
+  border: none;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.input-group-span {
+  font-size: 14px;
+}
+
+
+.btn-modal {
+  padding-top:  10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 1px rgba(255, 255, 255, 0.15), 0 5px 0 #FA6E00, 0 8px 3px rgba(0, 0, 0, 0.2);
+  border: none;
+  background: #fc892b;
+  font-size: 16px;
+  border-radius: 9px;
+  font-weight: bolder;
+  color: #620000;
+  cursor: pointer;
+  text-shadow: 2px 4px 3px #FA6E00;
+  transition: all 0.5s ease;
+  position: relative;
+  
+}
+
+.btn-modal:hover {
+  padding-top:  10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 1px rgba(255, 255, 255, 0.15), 0 5px 0 #e06200, 0 8px 3px rgba(0, 0, 0, 0.2), 0 0 5px #FA6E00,  0 0 8px #FA6E00;
+  border: none;
+  background: #fa8220;
+  font-size: 16px;
+  border-radius: 9px;
+  font-weight: bolder;
+  color: #620000;
+  cursor: pointer;
+  text-shadow: 2px 4px 3px #e06200;
+  transition: all 0.5s ease;
+  position: relative;
+  
+}
+
+.btn-modal-close {
+  padding-top:  10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 1px rgba(255, 255, 255, 0.15), 0 5px 0 #bbb, 0 8px 3px rgba(0, 0, 0, 0.2);
+  border: none;
+  background: #dfe0df;
+  font-size: 16px;
+  border-radius: 9px;
+  font-weight: bolder;
+  color: #402e32;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  position: relative;
+  text-shadow: 2px 4px 3px #bbb;
+  
+}
+
+.btn-modal-close:hover {
+  padding-top:  10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 1px rgba(255, 255, 255, 0.15), 0 5px 0 #a3a3a3, 0 8px 3px rgba(0, 0, 0, 0.2), 0 0 5px #f7f7f7,  0 0 8px #f7f7f7;
+  background: #d8d8d8;
+  font-size: 16px;
+  border-radius: 9px;
+  font-weight: bolder;
+  color: #402e32;
+  cursor: pointer;
+  text-shadow: 2px 4px 3px #a3a3a3;
+  transition: all 0.5s ease;
+  position: relative;
+  text-shadow: 2px 4px 3px #a3a3a3;
+  
+}
+
+
+/****** Modals - End ******/
+
+
+
+/****** Footer ******/
+
+footer {
+  width: 100%;
+  background: #FA6E00;
+  text-align: center;
+  font-weight: 500;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  border-top: 5px solid #FF943E;
+  font-family: 'Rubik';
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+footer img.footer-icon {
+  width: 35px;
+}
+
+footer p:hover {
+  color: #620018 !important;
+}
+
+footer a.link-color {
+  color: #620000 !important;
+  position: relative;
+  text-decoration: none;
+}
+
+footer a.link-color:hover {
+  color: #620017 !important;
+}
+
+footer a.link-color::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 1px;
+  background-color: #620017 !important;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+footer a.link-color:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+footer a.link-color:active {
+  color: #620017 !important;
+}
+
+
+/****** Footer - End ******/
+
+
+
+
+
